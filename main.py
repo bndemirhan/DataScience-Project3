@@ -83,6 +83,9 @@ st.sidebar.markdown("**Sonucu görmek için aşağıdaki özellikleri seçin!**"
 gill_size_options = {0: "Dar", 1: "Geniş"}  # 0 ve 1 yerine anlamlı isimler
 gill_size = st.sidebar.selectbox("Solungaç Boyutu", options=list(gill_size_options.keys()),
                                  format_func=lambda x: gill_size_options[x], help="Solungaçların genişliğini seçin.")
+gill_bruises_options = {0: "Yok", 1: "Var"}
+gill_bruises = st.sidebar.selectbox("Çürüğü var mı?", options=list(gill_bruises_options.keys()),
+                                 format_func=lambda x: gill_bruises_options[x], help="Solungaçların çürük durumunu seçin.")
 
 # Renk seçeneklerini oluştur
 gill_color_options = {0: "Siyah", 1: "Kahverengi", 2: "Açık Kahverengi", 3: "Çikolata", 4: "Gri", 5: "Yeşil",
